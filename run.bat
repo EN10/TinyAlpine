@@ -1,0 +1,1 @@
+.\qemu-system-x86_64 -kernel .\bzImage -initrd initramfs.cpio.gz
