@@ -49,5 +49,5 @@ On Windows, you can boot the kernel and initramfs with QEMU:
 
 ## Current files
 
-- `bzImage` — 2.8M
-- `initramfs.cpio.gz` — 3.6M
+- `bzImage` — 2.8M (Linux kernel 7.0.31)
+- `initramfs.cpio.gz` — 3.6M (Alpine Linux 3.23.4)
