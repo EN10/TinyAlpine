@@ -1,5 +1,7 @@
 # TinyAlpineLinux
 
+> **Note**: This project is a current work in progress. Expect changes in the next few days/weeks.
+
 TinyAlpineLinux is an experimental, bootable Alpine Linux image focused on a very small footprint. The repository combines a kernel image, an Alpine 3.23 mini root filesystem packed as an initramfs, and a minimal `/init` script that mounts the required pseudo-filesystems and drops into a shell.
 
 This project follows the same lightweight, bootable Linux exploration as https://github.com/EN10/TinyBoxLinux.
