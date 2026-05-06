@@ -6,6 +6,10 @@ TinyAlpineLinux is an experimental, bootable Alpine Linux image focused on a ver
 
 This project follows the same lightweight, bootable Linux exploration as [TinyBoxLinux](https://github.com/EN10/TinyBoxLinux).
 
+## Current Versions & Sizes
+*   **[Linux Kernel](https://www.kernel.org/)**: 7.0.31 ([`bzImage`](bzImage): 2.8 MB)
+*   **[Alpine Linux](https://www.alpinelinux.org/)**: 3.23.4 minirootfs ([`initramfs.cpio.gz`](initramfs.cpio.gz): 3.6 MB)
+
 ## What This Repository Contains
 
 - `bzImage` - prebuilt Linux kernel image (version 7.0.31, 2.8MB)
@@ -36,6 +40,15 @@ Release downloads are listed on the Alpine Linux website:
 
 - https://www.alpinelinux.org/downloads
 
+## Building the Kernel
+
+The `bzImage` in this repository is prebuilt. To build your own kernel, see the kernel build documentation in [TinyBoxLinux](https://github.com/EN10/TinyBoxLinux):
+
+*   **Script**: [`setup.sh`](https://github.com/EN10/TinyBoxLinux/blob/main/setup.sh)
+*   **Minimal kernel config**: [`tinymenuconfig.md`](https://github.com/EN10/TinyBoxLinux/blob/main/tinymenuconfig.md)
+*   **Reference**: [Making Simple Linux Distro from Scratch](https://www.youtube.com/watch?v=QlzoegSuIzg)
+*   **Reference**: [Building a tiny Linux kernel](https://weeraman.com/building-a-tiny-linux-kernel)
+
 ## Rebuilding The Initramfs
 
 Use these steps if you want to reproduce or customize `initramfs.cpio.gz`.
@@ -58,6 +71,12 @@ Use these steps if you want to reproduce or customize `initramfs.cpio.gz`.
 6. Boot the rebuilt image with the provided kernel or your own kernel.
 
 ## Booting With QEMU
+
+### QEMU Setup for Windows
+
+- [QEMU Prebuilt Zip](https://github.com/EN10/TinyBoxLinux/blob/main/bootfiles/qemu-extracted.zip) [38.5 MB] - concise version of the installer [172 MB]
+
+Exe files can also be downloaded from: https://qemu.weilnetz.de/w64/
 
 ### Windows
 
