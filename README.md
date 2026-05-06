@@ -2,14 +2,14 @@
 
 > **Note**: This project is a current work in progress. Expect changes in the next few days/weeks.
 
-TinyAlpineLinux is an experimental, bootable Alpine Linux image focused on a very small footprint. The repository combines a kernel image, an Alpine 3.23 mini root filesystem packed as an initramfs, and a minimal `/init` script that mounts the required pseudo-filesystems and drops into a shell.
+TinyAlpineLinux is an experimental, bootable Alpine Linux image focused on a very small footprint (combined size of ~6.4MB for the kernel and initramfs). The repository combines a kernel image, an Alpine 3.23 mini root filesystem packed as an initramfs, and a minimal `/init` script that mounts the required pseudo-filesystems and drops into a shell.
 
 This project follows the same lightweight, bootable Linux exploration as [TinyBoxLinux](https://github.com/EN10/TinyBoxLinux).
 
 ## What This Repository Contains
 
-- `bzImage` - prebuilt Linux kernel image (version 7.0.31)
-- `initramfs.cpio.gz` - prebuilt initramfs based on Alpine Linux 3.23.4 minirootfs
+- `bzImage` - prebuilt Linux kernel image (version 7.0.31, 2.8MB)
+- `initramfs.cpio.gz` - prebuilt initramfs based on Alpine Linux 3.23.4 minirootfs (3.6MB)
 - `init` - minimal init script used inside the initramfs
 - `run.bat` - Windows helper for launching QEMU with the bundled kernel and initramfs
 
